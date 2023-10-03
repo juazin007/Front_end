@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Background */
+    --light: url(../img/bg-light.jpg) no-repeat center;
+    --textColor: black;
+    /* button */
+    --iconDark: url(../img/Dark-Mode.svg);
+    --marginButton: 0;
+    --buttonColor:#F26430 ;
+    --fundoButton:linear-gradient(89deg, #FFFF80, #F78030, #E96C2D, #D6512A, #D34826)border-box;
+    --smokeColor:#f264302f;
+    /* link */
+    --smokeText:#FFFF80;
+    --fundoLink:linear-gradient(white, white)padding-box;
+    /* icones */
+    --linkedin:#FFFF80;
+    --github:#E96C2D;
+    --instagram:#D34826;
+}
+
+body{
+    background: var(--light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    max-width: 600px;
+    margin: 60px auto 0px;
+    padding: 0 25px;
+}
+
+/* perfil dark */
+.dark{
+    /* BACKGROUND */
+    --light: url(../img/bg-dark.png) no-repeat center;
+    --textColor: white;
+    /* button */
+    --buttonColor: #6100fe;
+    --marginButton:40px;
+    --iconDark: url(../img/Light-Mode.svg);
+    --fundoButton:linear-gradient(89deg, #EE05F2,#BF05F2,#5E83F2,#05AFF2, #05DBF2)border-box;
+    --smokeColor:#ab30f22f;
+    /* link */
+    --smokeText:#ce80ff;
+    --fundoLink:linear-gradient(black, black)padding-box;
+    /* icone */
+    --linkedin:#EE05F2;
+    --github:#5E83F2;
+    --instagram:#05DBF2;
+}
+
+.profile{
+    text-align: center;
+    padding: 25px;
+    font-family: 'Gabarito', cursive;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+}
+
+.profile p{
+    color: var(--textColor);
+    margin-top: 15px;
+    font-weight: 900;
+}
+
+#botao{
+
+    position: relative;
+    width: 80px;
+    margin: 0 auto;
+}
+
+#botao button{
+    background: var(--buttonColor) var(--iconDark) no-repeat center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0.5px solid black;
+    margin-left: var(--marginButton);
+    transition: ease-in-out 1s;
+}   
+
+#botao button:hover{
+    transition: 0.6s;
+    outline: 7px solid var(--smokeColor);
+}
+
+#botao span{
+    background: var(--fundoButton);
+    display: block;
+    width: 80px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+
+li{
+    text-align: center;
+}
+
+
+li button{
+    font-family: 'Oswald', sans-serif;
+    background: var(--fundoLink), var(--fundoButton) border-box;
+    border: solid transparent;
+    height: 50px;
+    width: 400px;
+    margin: 15px auto;
+    border-radius: 25px;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+button a{
+    text-decoration: none;
+    color: var(--textColor);
+    text-shadow: 0 2px 2px var(--smokeText);
+}
+
+button a:active{
+    color: #D6512A;
+}
+
+.listaMidia ul{
+    font-size: 50px;
+    list-style: none;
+    position: absolute;
+    margin-top: -375px;
+}
+
+.bxl-linkedin-square{
+    color: var(--linkedin);
+}
+
+.bxl-github{
+    color: var(--github);
+}
+
+.bxl-instagram{
+    color: var(--instagram);
+}
+
